@@ -1,0 +1,41 @@
+version: "3"
+
+services:
+  db:
+    build: db/
+    container_name: "just_l33t_database"
+    privileged: false
+    restart: unless-stopped
+    environment:
+      - MYSQL_ROOT_PASSWORD=password
+      - MYSQL_DATABASE=just_l33t_db
+  
+  backend:
+    build: backend/
+    depends_on:
+     - db
+    container_name: "just_l33t_backend"
+    environment:
+      - MYSQL_ROOT_PASSWORD=password
+      - MYSQL_DATABASE=just_l33t_db
+      - DBHOST=db
+
+      - SECRET_KEY=c266a22476753ff61fd00c84a4d31c68
+      - EN_HOST=en.just-l33t.fibonhack.it
+      - TO_HOST=to.just-l33t.fibonhack.it
+      - ADMIN_HOST=admin.just-l33t.fibonhack.it
+ 
+  admin:
+    build: admin/
+    depends_on:
+     - db
+    container_name: "just_l33t_admin"
+    ports:
+      - 3000:3000
+    environment:
+      - MYSQL_ROOT_PASSWORD=password
+      - MYSQL_DATABASE=just_l33t_db
+      - DBHOST=db
+
+      - SECRET_KEY=bb9a04f8bfd2e590b93177508e07b47a
+      - FLAG=ifctf{kek}
