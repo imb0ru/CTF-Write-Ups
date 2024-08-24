@@ -65,16 +65,12 @@ The attack was confirmed to be **successful** based on evidence of unauthorized 
 
 ![Playbook 9](assets/playbook9.png)
 
-### Containment Actions
-
 Given the successful nature of the attack, immediate containment is required to prevent further compromise. In **Endpoint Security**, I searched for the destination IP `172.16.17.233` and applied a **containment policy** to the affected endpoint, effectively isolating the attacker’s access.
 
 Once containment was confirmed, all relevant artifacts were recorded in the playbook to document the investigation process.
 
 ![Artifacts](assets/artifacts.png)
 ![Playbook 10](assets/playbook10.png)
-
-### Escalation and Closure
 
 Due to the successful breach and the potential scope of compromise, escalation to **Tier 2** is warranted for further, in-depth analysis by more experienced analysts.
 
