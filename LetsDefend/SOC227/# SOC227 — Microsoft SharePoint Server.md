@@ -49,7 +49,7 @@ We categorize the attack under the `Other` classification because its nature doe
 
 ![Playbook 5](assets/playbook5.png)
 
-Further, I expanded the investigation by querying **Email Security** systems for artifacts (such as IP addresses or server names) that may be linked to the alert. No associated email-based threats were discovered, hence this part of the investigation was `not applicable`.
+Further, I expanded the investigation by querying **Email Security** systems for artifacts (such as IP addresses or server names) that may be linked to the alert. No associated email-based threats were discovered, hence this part of the investigation was `not planned`.
 
 ![Playbook 6](assets/playbook6.png)
 
