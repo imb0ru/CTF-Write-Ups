@@ -16,15 +16,11 @@ The playbook’s initial phases offer investigative guidelines to ensure a metho
 ![Guideline 1](assets/guideline1.png)
 ![Guideline 2](assets/guideline2.png)
 
-## Preliminary Artifacts
-
 As referenced in the alert introduction, the following preliminary artifacts must be gathered to facilitate the investigation:
 - **Hostname**: `MS-SharePointServer`
 - **Source IP Address**: `39.91.166.222`
 - **Destination IP Address**: `172.16.17.233`
 - **Requested URL**: `/_api/web/siteusers`
-
-## Walkthrough
 
 Given the involvement of an external IP address (`39.91.166.222`), I initiated an investigation by querying IP reputation databases such as **IPQS** and **VirusTotal**. The results confirmed that the IP address is flagged as malicious and is associated with **China Unicom**.
 
